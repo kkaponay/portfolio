@@ -17,12 +17,9 @@ do
     if [ "$hash_var" == "$line" ]
     then
         echo "Access Granted"
-        echo 0
-
     else
         echo "Access Denied"
-        echo 1
-
+        exit 1
     fi 
 done <"$passhashfile"
-exit
+exit 0

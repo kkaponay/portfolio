@@ -1,14 +1,52 @@
-#!/bin/bash
+#!/bin/bash 
 
-./scripts/portfolio/week2/passwordCheck.sh
+./passwordCheck.sh 
 
-read
+if [ $? -eq 0 ];then 
 
-if $pass_var=0
-    then
-    echo "Select a folder" "1. Create a folder"
-        1. Create a folder
-        2. Copy a folder
-        3. Seta password
+echo "1.Create a folder" 
 
-fi
+echo "2.copy a folder" 
+
+echo "3.set a password" 
+
+else 
+
+echo "Goodbye" 
+
+exit 1
+
+fi 
+
+read useroption 
+
+
+case $useroption in 
+
+1) 
+
+./foldermaker.sh 
+
+;; 
+
+2) 
+
+./foldercopier.sh 
+
+;; 
+
+3) 
+
+./setPassword.sh 
+
+;; 
+
+*) 
+
+echo "Incorrect selection" 
+
+;; 
+
+esac 
+
+exit 0 
