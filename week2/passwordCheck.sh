@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# passwordCheck.sh, week2
+
 # Write a script named 'passwordCheck.sh' that accomplishes the following:
     # 1. Ask the user to type a secret password (hide that input).
     # 2. Check the user’s password against the hash stored in 'secret.txt'.

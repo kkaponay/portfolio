@@ -4,11 +4,11 @@
 
 if [ $? -eq 0 ];then 
 
-echo "1.Create a folder" 
+echo "1. Create a folder" 
 
-echo "2.copy a folder" 
+echo "2. Copy a folder" 
 
-echo "3.set a password" 
+echo "3. Set a password" 
 
 else 
 
