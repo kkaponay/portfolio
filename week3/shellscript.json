@@ -1,16 +1,16 @@
    
-	"add a shebang": {
+{	
+		"Add a shebang": [
+		
+			{
    
 		   "prefix": "shebang",
    
-		   "body": [
-   
-		   "#!/bin/bash", 
-   
-		   ],
-   
+		   "body": "#!/bin/bash",
+
 		   "description": "Add shebang to script"
    
-   }
-   
-   }
+		}
+
+		]
+}
