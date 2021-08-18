@@ -13,6 +13,8 @@ printError()
 
 #This function will get a value between the 2nd and 3rd arguments
 
+number=42
+
 getNumber()
 
 {
@@ -25,22 +27,15 @@ getNumber()
 
         read -p "$1: "
 
-    if [[ $REPLY -eq 42 ]]; then
-        printError "Correct"
-        exit 0
+    if [[ $REPLY -eq $number ]]; then
+        echo "Correct"
 
-    elif [[ $REPLY -lt 42 ]]; then
-        printError "Too Low"
-
-    elif [[ $REPLY -gt 42 ]]; then
+    elif [[ $REPLY -gt $number ]]; then
         printError "Too High"
-    
-     elif [[ $reply -gt 42 ]]; then
-        printError "Correct"
-        echo "Thank You"
-        exit 0
-    
 
+    elif [[ $REPLY -lt $number ]]; then
+        printError "Too Low"
+    
     fi
 
     done
@@ -49,6 +44,6 @@ getNumber()
 
 
 echo "This is the Guessing Game!" 
-echo "Can you guess the correct number?"
+echo "Can you guess the Right number?"
 
-getNumber "please type a number between 1 and 100" 1 100
+getNumber "Please type a number between 1 and 100" 1 100
