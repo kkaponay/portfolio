@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# passwordCheck.sh, week2
+# Week2, passwordCheck.sh
 
 # Write a script named 'passwordCheck.sh' that accomplishes the following:
     # 1. Ask the user to type a secret password (hide that input).
@@ -25,3 +25,5 @@ do
     fi 
 done <"$passhashfile"
 exit 0
+
+# End Script
