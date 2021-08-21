@@ -1,12 +1,13 @@
 #!/bin/bash 
 
-# megammenu.sh, week3
-# expansion of menu.sh, week2 script to include further menu options
-# required to check password created from passwordCHeck.sh, week2
-# if password is incorrect, access denied
-# if password in correct, access granted
-# contunies to execute until user selects exit as the option
-# improvement to make user friendhly though font and colour
+# Week3, megammenu.sh
+
+# Expansion of menu.sh, week2 script to include further menu options
+# Required to check password created from passwordCHeck.sh, week2
+# If password is incorrect, access denied
+# If password in correct, access granted
+# Contunies to execute until user selects exit as the option
+# Improvement to make user friendly though font and colour
 
 # Colour and Font code variables menu
 
@@ -104,3 +105,5 @@ echo -e "${Red}${Blink}Invalid option, please choose between 1 and 8${Reset}"
 esac 
 
 done
+
+# End Script
