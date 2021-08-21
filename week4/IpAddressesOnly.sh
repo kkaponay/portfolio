@@ -12,5 +12,4 @@
 p
 }'
 
-exit 
 # End Script
