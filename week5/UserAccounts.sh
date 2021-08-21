@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# UserAccounts.sh
+# Week 5, UserAccounts.sh
 
 # Script to format data from /etc/passwd file into a table
 # Format includes table lines between columns and outer edge
@@ -29,3 +29,4 @@ END {
 
 }' 
 
+# End script
