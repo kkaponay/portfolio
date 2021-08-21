@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# IpAddressesOnly.sh, week4
+# Week 4, IpAddressesOnly.sh
 
 # Executes IpInfo.sh script
 
-# Using sed only display IP Address
+# Piped using sed only it displays IP Address
 
 # sed -n gives no output, unless specifically p written (IP Address) to print command
 
 ./IpInfo.sh | sed -n '/IP Address: / {
 p
 }'
+
+exit 
+# End Script
